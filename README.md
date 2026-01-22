@@ -31,7 +31,7 @@ To determine which blocks require fine-tuning, we also conducted extensive exper
 ![flowchar-img](figures/fig4.png)
 The figure above is the region-electrode correspondence table we used, which can be adjusted as needed when there are variations in equipment or data quality.
 
-###  MMD Value:
+###  MMD Values:
 On the SEED dataset, the MMD values for the frontal (F), temporal (T), parietal (P), central (C), and occipital (O) regions are 0.23, 0.08, 0.13, 0.04, and 0.18, respectively. On the PWED dataset, the corresponding MMD values are 0.18, 0.04, 0.01, 0.05, and 0.21, while on the BCIC IV-1 dataset, they are 0.16, 0.03, 0.22, 0.29, and 0.03.
 
 ###  Preprocessing:
