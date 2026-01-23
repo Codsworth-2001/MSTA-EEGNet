@@ -83,7 +83,7 @@ def main(args):
     model = NetModel(args)
     
 
-    acc_list, precision_list, recall_list, F1_list, index = model.train_with_Kfold(logger, alldataset,testdataset, args.k, True)
+    acc_list, precision_list, recall_list, F1_list = model.train_with_Kfold(logger, alldataset,testdataset, args.k, True)
 
     with open('result_' + args.dataset + '/result' + args.model + '.txt', 'a') as file:
         acc = sum(acc_list) / len(acc_list)
@@ -121,10 +121,7 @@ def main(args):
         file.write(' ')
         file.write(args.input_value)
         file.write('\n')
-        file.write('index:')
-        file.write(' ')
-        file.write(str(index))
-        file.write('\n')
+
 
 
 # 即得到engine中修改loss相关
