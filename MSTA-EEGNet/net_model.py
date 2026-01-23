@@ -148,7 +148,7 @@ class NetModel(object):
         test_stats = self.val(logger)
         logger.info("Test Stats: %s" % str(test_stats))
         
-        return acc_list, precision_list, recall_list, F1_list, test_stats['index']
+        return acc_list, precision_list, recall_list, F1_list
 
     def val(self, logger):
         start_time = time.time()
@@ -238,6 +238,7 @@ class NetModel(object):
             params.__delitem__(key)
         self.network.load_state_dict(params, strict=False)
         print("Load network features parameters only from {}".format(checkpoint_path))
+
 
 
 
